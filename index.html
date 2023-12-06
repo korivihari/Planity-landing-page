@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logo.ico">
+    <title>Planity : Coiffeur, Institut de beauté & Barbier en ligne</title>
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section class="navigation">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-light navbar-light bg-transparent fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()"  id="toggler-btn">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a id="navbar-brand" class="navbar-brand" href="#">PLANITY</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" style="color: rgb(183, 176, 176)">Hairdresser</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" style="color: rgb(183, 176, 176)">Barber</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"  href="#" style="color: rgb(183, 176, 176)">Manicure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"  href="#" style="color: rgb(183, 176, 176)">beauty Institute</a>
+            </li>
+          </ul>
+          
+          <button  class="btn btn-outline-success est">Add your establishment</button>
+
+          <button class="btn btn-outline-success login" type="Login">To log in</button>
+          
+        </div>
+      </div>
+    </nav>
+    <div id="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-left: 170px;  font-size: 50px; top:50px;">×</a>
+      <button class="btn btn-outline-success login" type="Login" widht="20px" style="margin: 12px 2px 12px 48px; padding: 12px 42px 12px 42px;">To log in</button>
+      <button  class="btn btn-outline-success est" style="margin: 12px 22px 12px 28px; padding: 12px 42px 12px 42px;">Add your establishment</button>
+      <a href="#">Hairdresser</a>
+      <a href="#">Barber</a>
+      <a href="#">Manicure</a>
+      <a href="#">beauty Institute</a>
+     
+     
+    </div>
+    <section class="image">
+      <h1 class="heading">Book in style</h1>
+      <ul class="sub headings">
+        <li class="no-bullet">Simple</li>
+        <li>Immediate</li>
+        <li>24/7</li>
+      </ul>
+      <div class="container search-boxes">
+        <div class="row search-box">
+            
+    <div class="col-md-6" style="width: 450px;">
+    <input type="text" id="service" list="services" placeholder="Name of Salon, services (cut..)" style="margin: 20px; border: none; outline: none;">
+
+    <!-- Datalist containing suggested options -->
+    <datalist id="services" style="border-radius: 10px;">
+        <option value="Hairdresser">
+        <option value="Barbers">
+        <option value="Manicure">
+        <option value="beauty salon">
+        <option value="Spa">
+        
+    </datalist>
+  </div>
+  <div class="col-md-4" style="width: 420px;">
+    <input type="text" id="address"  placeholder="(Or) Address, City.." style="border: none; outline: none;">
+  </div>
+  <div class="col-md-2" style="margin-left: 1px;">
+    
+    <button type="search" class="search" style="color: white; background-color: black; padding: 12px;">To research</button>
+  </div>
+        </div>
+      </div>
+    </section>
+    
+  </section>
+ 
+  <!-- second section trial -->
+  <section class="colored-section" id="testimonials">
+    <h6 class="discover" style="font-size: 2.5em; position: relative; margin-left: 800px;">Discover our Professinals</h6>
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <div class="row">
+            <div class="col testimonial-col">
+          
+          <img class="testimonial-image"  src="hairdresser.png" alt="" height="70" style=" max-width: 100%; border-radius: 20px; padding: 10px; margin-left:250px; width:400px; height: 500px;" >
+          
+        </div>
+        <div class="col desc-col" style="margin-right: 80px; padding-top: 50px;">
+          <div id="description" style="margin-right: 80px; padding-right: 50px;">
+            <h4>Hairdresser</h4>
+            <p style="margin-right: 10px; width: 500px; font-size: 1.3em;">
+                Want to change your look or simply refresh your cut? You need expert advice to enhance your style
+                <span id="see-more" class="visible not-visible" style="display: none;">What are the best salons near you? 
+                To answer these questions, the Planity appointment portal is your best ally. Find out which salon is right for you, the 
+                specialized hairdressers, the make-up artists with the best advice, and make an appointment without leaving home, whenever you want!
+                Your hair deserves the best! </span>
+            </p>
+            <button onclick="toggleSeeMore()"  style="background-color: white; border: none; border-bottom: 1px solid black;">See more</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="carousel-item container-fluid">
+          <div class="row">   
+            <div class="col testimonial-col">
+          
+          <img class="testimonial-image"  src="barber.png" alt="" height="70" style=" max-width: 100%; border-radius: 20px; padding: 10px; margin-left:250px; width:400px; height: 500px;" >
+         
+        </div>
+        <div class="col desc-col" style="margin-right: 80px; padding-top: 50px;">
+          <div id="description1"  style="margin-right: 80px; padding-right: 50px;">
+            <h4>Barber</h4>
+            <p style="margin-right: 10px; width: 500px; font-size: 1.3em;">
+                You dream of a well-shaped beard, that your face is pampered and your mustache tamed.
+                <span id="see-more1" class="visible not-visible" style="display: none;"> You have a very precise idea of how you want to see your 
+                  beard: sophisticated cut, hipster look, natral effect, vintage or trendy, Planity offers you the cream of the crop when it 
+                  comes to barbers! Our service providers will make you experience an astonishing moment of relaxation, in the heart of salons where well - 
+                  being and radition combine for a result beyond your expectation. Don't wait any longer to book your appointment and treat your beard to the best specialist.</span>
+            </p>
+            <button onclick="toggleSeeMore1()" style="background-color: white; border: none; border-bottom: 1px solid black;">See More</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="carousel-item container-fluid">
+          <div class="row">
+            <div class="col testimonial-col">
+          
+          <img class="testimonial-image"  src="manicure.png" alt="" height="70" style=" max-width: 100%; border-radius: 20px; padding: 10px; margin-left:250px; width:400px; height: 500px;" >
+          
+        </div>
+        <div class="col desc-col" style="margin-right: 80px; padding-top: 50px;">
+          <div id="description2"  style="margin-right: 80px; padding-right: 50px;">
+            <h4>Manicure</h4>
+            <p style="margin-right: 10px; width: 500px; font-size: 1.3em;">
+                It is said that hands are a reflection of how we take care of ourselves.
+                <span id="see-more2" class="visible not-visible" style="display: none;">It is therefore completely natural to want to pampere
+                them the same way you take care of your body. Our selection of salons and rofessionals dedicated to hands and feet is waiting
+              for you. Manicure, foot beauty, but also varnish application, targeted massages and precious treatments, all you have to do is 
+            choose which service would particularly please you. Then make an appointment online, and let it happen.</span>
+            </p>
+            <button onclick="toggleSeeMore2()" style="background-color: white; border: none; border-bottom: 1px solid black;">See More</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="carousel-item container-fluid">
+          <div class="row">
+            <div class="col testimonial-col">
+          
+          <img class="testimonial-image"  src="beauty institute.png" alt="" height="70" style=" max-width: 100%; border-radius: 20px; padding: 10px; margin-left:250px; width:400px; height: 500px;" >
+         
+        </div>
+        <div class="col desc-col" style="margin-right: 80px; padding-top: 50px;">
+          <div id="description3"  style="margin-right: 80px; padding-right: 50px;">
+            <h4>beauty Institute</h4>
+            <p style="margin-right: 10px; width: 500px; font-size: 1.3em;">
+                Your desire for well-being needs to be satisfied quickly and surely.
+                <span id="see-more3" class="visible not-visible" style="display: none;"> The online apppointment booking service developed by Planity allows
+                  you to choose the establishment that will best meet your relaxation requirements. Massage, exfoliation, precise treatments, hair removal, 
+                our online platform with the establishment that will keep all its promises and enjoy an unforgettable relaxing break!</span>
+            </p>
+            <button onclick="toggleSeeMore3()" style="background-color: white; border: none; border-bottom: 1px solid black;">See More</button>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev arrow-btn1" href="#testimonial-carousel" role="button" data-slide="prev"  style="margin-left:800px; margin-top:500px; margin-bottom:500px; width: 2%; height: 5%;  border-radius: 100%; background-color: #a5a0a0;"> 
+    <span class="carousel-control-prev-icon"> </span>
+      </a>
+      <a class="carousel-control-next arrow-btn2" href="#testimonial-carousel" role="button" data-slide="next" style="margin-right:200px; margin-right: 550px; margin-top:500px; width: 2%; height: 5%;  border-radius: 100%; background-color: #a5a0a0;">
+    <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+  
+  <!-- talk section -->
+  
+  <section class="talk">
+    <div class="container">
+      <div class="col">
+        <center><h6 style="font-size: 0.8em;">PRESS</h6></center>
+        <center><h1 style="font-size:xxx-large;">They talk about us</h1></center>
+        <div class="row brands">
+         <div class="col brand-1" style="border-radius: 10px 0 10px 10px; border-bottom-right-radius: 0px;">VOGUE</div>
+         <div class="col brand-2">GRAZIA</div>
+         <div class="col brand-3" >ELLE</div>
+         <div class="col brand-4" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">MARIE CLAIRE</div>
+      
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <!-- appointments section -->
+  <section class="appointments-online" style="padding-top: 20px; margin-bottom: 150px;">
+    <div class="container">
+      <div class="col">
+        <h6 style="font-size:0.8em">STRONG GROWTH</h6>
+        <div class="question">
+          <h1>Are you a beauty professional?</h1>
+          <h1 style="width: 750px;">Discover how to make appointments online!</h1>
+        </div>
+        <div class="card-section">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card" style="border-bottom-right-radius: 0; border-bottom-left-radius: 0; padding-top: 20px; padding-bottom: 20px;">
+              <div class="card-header bg-white" style="border-bottom: none;">
+                <h1>+50%</h1>
+              </div>
+              <div class="card-body">
+                <p style="font-size: 1.6em;">frequency of appointment made online</p>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Add your establishment</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card" style="border-radius: 0; padding-top: 20px; padding-bottom: 20px;">
+              <div class="card-header  bg-white" style="border-bottom: none;">
+                <h1>4x</h1>
+              </div>
+              <div class="card-body">
+                <p style="font-size: 1.6em;">fewer forgettings with SMS appointment remainders</p>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Add your establishment</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card"  style="border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-top-left-radius: 0; padding-top: 20px; padding-bottom: 20px;">
+              <div class="card-header  bg-white" style="border-bottom: none;">
+                <h1>50%</h1>
+              </div>
+              <div class="card-body">
+                <p style="font-size: 1.6em;">online appointments are made outside opening hours</p>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Add your establishment</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card bg-white"  style="border-bottom-right-radius: 0; border-top-right-radius: 0; border-top-left-radius: 0; padding-top: 20px; padding-bottom: 20px;">
+              <div class="card-header  bg-white" style="border-bottom: none;">
+                <h1>+30,000</h1>
+              </div>
+              <div class="card-body">
+                <p style="font-size: 1.6em;">salons & institutes</p>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Add your establishment</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card bg-white" style="border-radius: 0; padding-top: 20px; padding-bottom: 20px;">
+              <div class="card-header bg-white" style="border-bottom: none;">
+                <h1>2 appointments</h1>
+              </div>
+              <div class="card-body">
+                <p style="font-size: 1.6em;">Taken every second</p>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Add your establishment</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card" style="border-bottom-left-radius: 0; border-top-right-radius: 0; border-top-left-radius: 0; padding-top: 20px; padding-bottom: 20px;">
+              <div class="card-header bg-white" style="border-bottom: none;">
+                <h1>> $5 billion</h1>
+              </div>
+              <div class="card-body">
+                <p style="font-size: 1.6em;">Appointments-sold</p>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Add your establishment</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional section -->
+  <section class="professional">
+   <div class="row">
+    <div class="col-lg-6 img">
+      <img src="team.png" width="500" height="300" alt="">
+    </div>
+    <div class="col-lg-6 text-col">
+      <div class="container">
+        <h6 style="font-size: 0.8em;">PROFESSIONNEL</h6>
+        <p style="font-size: 40px; width: 450px;">Planity is looking for profiles throughout France to digitalize the beauty sector</p>
+        <p style="font-size: 1.5em;" class="name">Antoine Puymirat - CEO </p>
+        <button class="btn btn-outline-success login" type="discover">Discover our offers</button>
+       </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- faqs section -->
+  <section class="faqs" style="align-items: center;">
+    <center><h6 style="font-weight: ligher;">FAQs</h6></center> 
+    <center><h1 style="font-weight: lighter; color: rgba(0, 0, 0, 0.886)">Frequently asked questions</h1></center>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="question" onclick="toggleAnswer('answer1')">What is Planity?<div class="arrow" style="color: black;">^</div></div>
+      <div class="answer" id="answer1"><p>-Planity is the beauty appointment booking platform that will change the way you organize yourself. The idea is to prevent you from wasting precious time by allowing you to make an appointment in one of our partner beauty establishments, in a few clicks and 24 hours a day!</p>
+        <p>-No more waiting on the phone or traveling, Planity offers you the possibility of booking an appointmnet with a hairdresser, a beauty salon, a barber or even a spa without having to leave your home.</p>
+    </div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+    <div class="question" onclick="toggleAnswer('answer2')">How to make an appointment in Planity?<div class="arrow">˄</div></div>
+    <div class="answer" id="answer2">
+      <p>-You know the name of your beauty establishmen:</p>
+      <p>-Continue making an appointment by providing your personal contact details.</p>
+    <p>-An email and SMS confirming your appointment will then be sent to you.</p>
+    </div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+  <div class="question" onclick="toggleAnswer('answer3')">Do I have to pay online on Planity?<div class="arrow">˄</div></div>
+  <div class="answer" id="answer3">
+    <p>-In most cases, you pay directly for your service in the beauty establishment</p>
+    <p>Payment and cancellation conditions are specified in all cases when making an appointment on PLanity</p>
+  </div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq(this)">
+  <div class="question" onclick="toggleAnswer('answer4')">How do I manage my appointments on Planity?<div class="arrow"> ˄ </div></div>
+  <div class="answer" id="answer4">
+    <p>-Click on My account or the man icon at the top right.</p>
+    <p>Indicate your Planity email and password if you are not connected, if you don't remember them, click on forgotten password.</p>
+  </div>
+  </div>
+
+  <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="question" onclick="toggleAnswer('answer5')">How do I make salon or institute appear on Planity?<div class="arrow">˄</div></div>
+      <div class="answer" id="answer5">
+        <p>-Simply contact us by telephone Monday to Friday from 9 a.m. to 6 p.m. and Saturday from 9 a.m. to 5 p.m. at +33 1 86 25 44 44 or send us a demo request by <a href="">Clicking here</a>.</p>
+        <p>-For more information on our offer for beauty professionals, <a href="">click here</a>.</p>
+      </div>
+  </div>
+  </section>
+
+  <!-- contact-details section -->
+  <section class="contact-details">
+   <div class="row details">
+    <div class="column colmn-1">
+      <img class="planity-logo" width="300" height="150" src="planity logo.avif" alt="" srcset="">
+      <div class="icons">
+        <a href=""><i class="social-icon fab fa-facebook-f" style="font-size: 2em;  border-radius: 10px;"></i></a>
+      <a href=""><i class="social-icon fab fa-instagram" style="font-size: 2em;"></i></a>
+      </div>
+    </div>
+       <div class="column colmn-2">
+        <h1 style="font-size: 1.5em; margin-left: 90px;">About Planity</h1>
+        <ul class="components" style="display: block; list-style: none;">
+          <li>Add your establishment</li>
+          <li>Join us</li>
+          <li>CGU</li>
+          <li>Planity Belgium</li>
+          <li>Planity Deutschland</li>
+          <li>Privacy Policy</li>
+          <li>Cookie management</li>
+        </ul>
+       </div>
+       <div class="column colmn-3">
+        <h1 style="font-size: 1.5em; margin-left: 90px;">Find your service</h1>
+        <ul class="components" style="display: block; list-style: none;">
+          <li>Hairdresser</li>
+          <li>beauty Institute</li>
+          <li>Barber</li>
+          <li>Manicure and foot beauty</li>
+          <li>Spa</li>
+        </ul>
+       </div>
+       <div class="column colmn-4">
+        <h1 style="font-size: 1.5em; margin-left: 90px;">Popular Searches</h1>
+        <ul class="components" style="display: block; list-style: none;">
+          <li>Hairdresser Paris</li>
+          <li>Hairdresser Bordeaux</li>
+          <li>Hairdresser Lyon</li>
+          <li>Hairdresser Toulouse</li>
+        </ul>
+       </div>
+   </div>
+   <hr style="color : aliceblue; height:2px; margin: 10px 70px 10px 140px;">
+   <p style="color: #a5a0a0; font-size: 15px; margin-left: 140px; margin-bottom: 30px; padding-top: 30px; padding-bottom: 30px;">Copyright @2023 Planity</p>
+  </section>
+
+  <!-- <script>
+  $(document).ready(function(){
+    var placeholder_text='What are you looking for? \n Name of the Salon,Services (Cut...)';
+    $('input').attr('placeholder', placeholder_text);
+    $('input').focus(function(){
+      $('input').attr('placeholder','');
+    });
+    $('input').blur(function(){
+      $('input').attr('placeholder',placeholder_text);
+    });
+
+
+  })
+</script> -->
+
+<script>
+  // FAQs
+  function toggleAnswer(answerId) {
+      var answer = document.getElementById(answerId);
+      if (answer.style.display === "none" || answer.style.display === "") {
+          answer.style.display = "block";
+      } else {
+          answer.style.display = "none";
+      }
+  }
+  // JavaScript function to toggle FAQ items
+  function toggleFaq(faq) {
+    faq.classList.toggle('active');
+  }
+
+  // changing navbar background
+  $(document).ready(function () {
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            if(window.innerWidth>=1000){
+              $('#navbar').removeClass('bg-transparent').addClass('navbar-scrolled');
+            }
+            else{
+              $('#navbar').removeClass('bg-transparent').addClass('navbar-fixed');
+            }
+              
+          } else {
+              $('#navbar').removeClass('navbar-scrolled').addClass('bg-transparent');
+          }
+      });
+  });
+
+  $(document).ready(function () {
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+              $('#navbar-brand').removeClass('navbar-brand').addClass('navbarbrand-scrolled');
+          } else if($(this).scrollTop()<50) {
+              $('#navbar').removeClass('navbarbrand-scrolled').addClass('navbar-brand');
+          }
+      });
+  });
+
+  // Toggle Navbar
+  function toggleNav() {
+            var sidebar = document.getElementById("sidebar");
+            var mainContent = document.getElementById("main");
+            var togglerBtn = document.getElementById("toggler-btn");
+
+            if (window.innerWidth <= 1000) {
+                if (sidebar.style.width === "250px") {
+                    sidebar.style.width = "0";
+                    // mainContent.style.marginLeft = "0";
+                    togglerBtn.style.display = "block";
+                } 
+                else {
+                    sidebar.style.width = "250px";
+                    // mainContent.style.marginLeft = "250px";
+                    togglerBtn.style.display = "none";
+                }
+            } else {
+                // Close sidebar if screen is wider than 768px
+               
+                sidebar.style.width = "250px";
+                mainContent.style.marginLeft = "0";
+                togglerBtn.style.display = "none";
+                
+            }
+        }
+
+        // Close sidebar on window resize if screen is wider than 1080px
+        window.addEventListener("resize", function() {
+            var sidebar = document.getElementById("sidebar");
+            // var mainContent = document.getElementById("main");
+            var togglerBtn = document.getElementById("toggler-btn");
+
+            if (window.innerWidth > 1000) {
+                sidebar.style.width = "0";
+                // mainContent.style.marginLeft = "0";
+                togglerBtn.style.display = "none";
+            }
+            else{
+              togglerBtn.style.display = "block";
+            }
+        });
+
+        function closeNav() {
+            var sidebar = document.getElementById("sidebar");
+            var togglerBtn = document.getElementById("toggler-btn");
+
+            sidebar.style.width = "0";
+            togglerBtn.style.display = "block";
+        }
+
+  
+</script>
+<script>
+    // second section trial
+
+    // var slideIndex = 0;
+    // var slides = document.getElementsByClassName("slide");
+    // var timer;
+
+    // showSlides();
+
+    // function showSlides() {
+    //     var i;
+    //     for (i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > slides.length) {
+    //         slideIndex = 1;
+    //     }
+    //     slides[slideIndex - 1].style.display = "block";
+    //     timer = setTimeout(showSlides, 5000); // Change slide every 5 seconds
+    // }
+
+    // function plusSlides(n) {
+    //     clearTimeout(timer);
+    //     slideIndex += n;
+    //     if (slideIndex > slides.length) {
+    //         slideIndex = 1;
+    //     } else if (slideIndex < 1) {
+    //         slideIndex = slides.length;
+    //     }
+    //     showSlides();
+    // }
+    // Add your existing scripts
+
+
+
+    function toggleSeeMore() {
+        var seeMoreText = document.getElementById("see-more");
+        var seeMoreButton = document.querySelector("#description button");
+
+        seeMoreText.style.display = (seeMoreText.style.display === "none" || seeMoreText.style.display === "") ? "block" : "none";
+        seeMoreButton.textContent = (seeMoreText.style.display === "none") ? "See More" : "See Less";
+    }
+    function toggleSeeMore1() {
+        var seeMoreText = document.getElementById("see-more1");
+        var seeMoreButton = document.querySelector("#description1 button");
+
+        seeMoreText.style.display = (seeMoreText.style.display === "none" || seeMoreText.style.display === "") ? "block" : "none";
+        seeMoreButton.textContent = (seeMoreText.style.display === "none") ? "See More" : "See Less";
+    }
+    function toggleSeeMore2() {
+        var seeMoreText = document.getElementById("see-more2");
+        var seeMoreButton = document.querySelector("#description2 button");
+
+        seeMoreText.style.display = (seeMoreText.style.display === "none" || seeMoreText.style.display === "") ? "block" : "none";
+        seeMoreButton.textContent = (seeMoreText.style.display === "none") ? "See More" : "See Less";
+    }
+    function toggleSeeMore3() {
+        var seeMoreText = document.getElementById("see-more3");
+        var seeMoreButton = document.querySelector("#description3 button");
+
+        seeMoreText.style.display = (seeMoreText.style.display === "none" || seeMoreText.style.display === "") ? "block" : "none";
+        seeMoreButton.textContent = (seeMoreText.style.display === "none") ? "See More" : "See Less";
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  
+
+  </body>
+</html>
